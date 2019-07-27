@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<title></title>
+
+<style type="text/css">
+.Normal {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+h2 {
+line-height:115%;
+margin:1.0pt;
+margin-top:18.0pt;
+margin-bottom:6.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:16.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+}
+.Header_Footer {
+mso-style-name:"Header & Footer";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Helvetica Neue";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.BodyA {
+mso-style-name:"Body A";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Helvetica";
+font-size:11.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.p1 {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Helvetica Neue";
+font-size:11.5pt;
+color:#3F4042;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;background:#FFFFFF;
+}
+.Textbody {
+mso-style-name:"Text body";
+line-height:108%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:14.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Default {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Helvetica Neue";
+font-size:11.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Body {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.annotationtext {
+mso-style-name:"annotation text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.BalloonText {
+mso-style-name:"Balloon Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:9.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.ListParagraph {
+mso-style-name:"List Paragraph";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:36.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.annotationsubject {
+mso-style-name:"annotation subject";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:10.0pt;
+color:Black;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Normal_Web_ {
+mso-style-name:"Normal (Web)";
+margin:1.0pt;
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+}
+.HTMLAddress {
+mso-style-name:"HTML Address";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:Black;
+font-style:italic;
+font-weight:normal;
+border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+}
+.CommentText {
+mso-style-name:"Comment Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:10.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.CommentSubject {
+mso-style-name:"Comment Subject";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:10.0pt;
+color:Black;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Hyperlink {
+}
+.Comment_Text_Char {
+font-size:12.0pt;}
+.annotation_reference {
+font-size:9.0pt;}
+.Balloon_Text_Char {
+font-size:9.0pt;}
+.Heading_2_Char {
+font-size:16.0pt;font-family:"Arial";}
+.Comment_Subject_Char {
+font-size:12.0pt;font-weight:bold;}
+.HTML_Address_Char {
+font-style:italic;font-size:12.0pt;}
+.Unresolved_Mention {
+background:#E1DFDD;color:#605E5C;}
+.FollowedHyperlink {
+color:Fuchsia;}
+.PageBreak {
+page-break-after:always;
+}
+.tm26 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+}
+.tm27 {
+font-size:12.0pt;
+font-family:"Calibri";
+}
+.tm28 {
+font-size:12.0pt;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm29 {
+color:Black;
+font-size:12.0pt;
+font-family:"Calibri";
+}
+.tm30 {
+font-family:"Calibri";
+}
+.tm31 {
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm32 {
+margin-left:36.0pt;
+}
+.tm33 {
+background:#FFF2CC;
+font-family:"Calibri";
+}
+.tm34 {
+margin-left:36.0pt;
+text-indent:-18.0pt;
+}
+.tm35 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+margin-left:0.0pt;
+}
+.tm36 {
+font-size:12.0pt;
+font-family:"Symbol";
+}
+.tm37 {
+font-family:"Symbol";
+}
+.tm38 {
+background:#FFFFFF;
+}
+.tm39 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+background:#FFFFFF;
+}
+.tm40 {
+margin-top:1.0pt;
+margin-bottom:7.5pt;
+}
+.tm41 {
+background:White;
+font-family:"Calibri";
+}
+.tm42 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+line-height:100%;
+}
+.tm43 {
+font-style:italic;
+font-size:12.0pt;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm44 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+margin-left:36.0pt;
+text-indent:-18.0pt;
+}
+.tm45 {
+font-size:10.0pt;
+}
+.tm46 {
+width:623px;
+}
+.tm47 {
+width:623px;
+border-spacing:0px;
+}
+.tm48 {
+border:1px;
+}
+.tm49 {
+height:34px;
+}
+.tm50 {
+vertical-align:top;
+}
+.tm51 {
+border:solid Black 1.0pt;
+padding:1.0pt 1.0pt 5.5pt 5.5pt;
+}
+.tm52 {
+width:208;
+}
+.tm53 {
+height:40px;
+}
+
+</style>
+</head>
+<body>
+<p class="BodyA tm26"><span class="tm27"></span><span class="tm27">Last Updated: July 26</span><sup><span class="tm27">th</span></sup><span
+ class="tm27">, 2019</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">&#160;</span></strong></p>
+<p class="BodyA tm26"><strong><span class="tm28">Our Commitment to Your Privacy</span></strong></p>
+<p class="p1"><span class="tm29">&#160;</span></p>
+<p class="Normal"><span class="tm30">Welcome to blackwoodspecter.com (the &#8220;Site&#8221;), a website operated by Blackwood Specter LLC (the &#8220;Company&#8221;).</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">The Site provides the Service as explained in our <a href="http://blackwoodspecter.com/termsofuse.html"> Terms of Use </a>.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">We respect and protect the privacy of our Site users. This Data Protection and Privacy Policy (&#8220;Policy&#8221;) explains how we collect and use your information and is part of
+our Terms of Use when you use our Site.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Your Consent</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">By using our Site, you consent to our Data Protection and Privacy Policy. If you don&#8217;t agree, please don&#8217;t use our Site.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="Normal"><strong><span class="tm31">Definitions</span></strong></p>
+<p class="Normal tm32"><span class="tm30">&#160;</span></p>
+<p class="Normal tm32"><span class="tm30"></span><strong><span class="tm31">Company</span></strong><span class="tm30"><br />&#8220;Company&#8221; means Blackwood Specter LLC, 850 Twin Rivers Drive #163903, Columbus, Ohio,
+43216.</span><span class="tm33"><br /></span></p>
+<p class="Normal tm32"><span class="tm30"></span><strong><span class="tm31">GDPR<br /></span></strong><span class="tm30">&#8220;GDPR&#8221; means that General Data Protection Regulation Act. (This is a law that applies in
+the European Economic Area (EEA).)</span></p>
+<p class="Normal tm32"><span class="tm30">&#160;</span></p>
+<p class="Normal tm32"><span class="tm30"></span><strong><span class="tm31">Data Controller<br /></span></strong><span class="tm30">&#8220;Data Controller&#8221; means the natural or legal person who (either alone or jointly
+or in common with other persons) determines the purposes for which and the manner in which any personal information are, or are to be, processed. The Company is the Data Controller for the personal data you submit via the
+Site.<br /></span></p>
+<p class="Normal tm32"><span class="tm30"></span><strong><span class="tm31">Data Processor<br /></span></strong><span class="tm30">&#8220;Data Processor&#8221; means any natural or legal person who processes the data on behalf
+of the Data Controller.<br /></span></p>
+<p class="Normal tm32"><span class="tm30"></span><strong><span class="tm31">Data Subject</span></strong><span class="tm30"><br />Data Subject is any living individual who is using our Site. </span></p>
+<p class="Normal tm32"><span class="tm30">&#160;</span></p>
+<p class="Normal"><strong><span class="tm31">Principles for Processing Personal Data</span></strong></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">Our principles for processing personal data subject to the GDPR are:</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal tm34"><span class="tm30">&#9679; </span><strong><span class="tm31">Fairness and lawfulness.</span></strong><span
+ class="tm30"> When we process personal data, the individual rights of the Data Subjects must be protected. All personal data must be collected and processed in a legal and fair manner.</span></p>
+<p class="Normal tm32"><span class="tm30">&#160;</span></p>
+<p class="Normal tm34"><span class="tm30">&#9679; </span><strong><span class="tm31">Restricted to a specific purpose.</span></strong><span
+ class="tm30"> The personal data of Data Subject must be processed only for specific purposes.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal tm34"><span class="tm30">&#9679; </span><strong><span class="tm31">Transparency</span></strong><span class="tm30">. The Data Subject must be informed of how his/her data is being collected, processed and used.</span></p>
+<p class="ListParagraph"><span class="tm30">&#160;</span></p>
+<p class="Normal tm34"><strong><span class="tm31">&#9679; </span><span class="tm31">Accuracy. </span></strong><span class="tm30">We take reasonable steps to ensure that personal data will be accurate, and that any mistakes
+are rectified or erased without delay.</span><strong><span class="tm31"><br /></span></strong></p>
+<p class="Normal tm34"><strong><span class="tm31">&#9679; </span><span class="tm31">Storage Limitation. </span></strong><span
+ class="tm30">We will not keep personal data for longer than we need it. (However, we may keep anonymized data for an indefinite term.)</span><strong><span
+ class="tm31"><br /></span></strong></p>
+<p class="Normal tm34"><strong><span class="tm31">&#9679; </span><span class="tm31">Confidentiality and Integrity. </span></strong><span
+ class="tm30">We use appropriate measures to maintain the confidentiality and integrity of personal data.</span><span class="tm30"><br /></span></p>
+<p class="BodyA tm26"><strong><span class="tm28">What information do we collect?<br /></span></strong></p>
+<p class="Normal"><span class="tm30"></span><span class="tm30">When you sign up for our newsletter, you will be asked to enter your email address.</span></p>
+<p class="BodyA tm26"><span class="tm27">We and our third-party service providers may collect certain information about your use of our Site. For example, we may collect and/or use:<br /></span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">Log information (including your IP address, browser type, Internet service provider, referring and exit pages, operating system,
+dates/time of access, and related data)</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">Information collected by cookies and tracking pixels (as discussed below)</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">Web beacons (also called &quot;Internet tags&quot; or &quot;clear gifs&quot;; used to count visitors to our Site and which
+pages were viewed and links clicked)</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">Embedded scripts (code temporarily downloaded onto your device to collect information about your interactions with the Service
+and thereafter deleted or deactivated) <br /></span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Where do we store your information?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">Your information may be stored in our own servers or in servers owned by third-party cloud storage providers.</span></p>
+<p class="BodyA tm26"><span class="tm27">Third-party storage providers may not use your information except as provided in this Privacy Policy.<br /></span></p>
+<p class="BodyA tm26"><strong><span class="tm28">How do we use your information?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">Information we collect from you might be used:</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">To provide you with Services</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">To notify you about changes to our Site and Services</span></p>
+<p class="BodyA tm35"><span class="tm27"></span><span class="tm36">&#183; </span><span class="tm27">To respond to your messages </span></p>
+<p class="Normal"><strong><span class="tm31">Legal Basis for Collecting and Processing Personal Data</span></strong></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">Our legal basis for collecting and using the personal data described in this Policy depends on the personal data we collect and the specific context in which we collect the information:</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">We need to perform a contract with you.</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">You have given us permission to do so.</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">Processing your personal data is in our legitimate interests.</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">We need to comply with the law.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">Please be aware that if you do not provide personal data we may be unable to provide some Services to you.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Do we use cookies or Tracking Pixels?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">Yes. </span></p>
+<p class="BodyA tm26"><span class="tm27">Cookies are small files that include an anonymous unique identifier. Cookies let us recognize your browser and remember certain information about you in order to personalize your experience
+of our Site.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">We also use cookies to compile aggregate data about traffic to our Site so that we can improve our Site and Site.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">We may use both persistent and session cookies. Persistent cookies remain on your computer after you close your session and until you delete them; session cookies expire when you close
+your browser. &nbsp;</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27"><a id="aGoBack"></a>A tracking pixel is a tiny pixel-sized image that allows us to track your Site visits, advertising impressions, and other types of Internet activity. It&#39;s also
+sometimes called a web bug, beacon, or page tag.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Do We Use Google AdWords or other remarketing methods?<br /></span></strong></p>
+<p class="Normal tm38"><span class="tm30">No. </span></p>
+<p class="Normal tm38"><span class="tm30">&#160;</span></p>
+<p class="Normal tm38"><strong><span class="tm31">Do We use Google Analytics?<br /></span></strong></p>
+<p class="Normal tm38"><span class="tm30">Yes.</span></p>
+<p class="Normal tm39"><span class="tm30">Users who visit the Site and have JavaScript enabled are tracked through Google Analytics.&nbsp; Google Analytics collects information anonymously and reports website trends to us
+without identifying individual visitors.&nbsp; Google Analytics collects a variety of information from users, including&nbsp; the Internet protocol (IP address) that is used to connect your computer to the Internet (which
+it does not report to us), your Internet service provider (ISP), browser type, type of operating system, the full Uniform Resource Locator (URL) clickstream to, through, and from our Site, including date and time, cookie,
+the length of time you spend on particular pages, which links you click while on our Site, and similar Site visit information.&nbsp; Google Analytics data is shared with Google. </span></p>
+<p class="Normal tm39"><span class="tm30">For more information on Google Analytics or to opt-out of having your information shared through Google Analytics, visit:&nbsp;</span><u><a
+ href="http://www.google.com/intl/en/analytics/privacyoverview.html"><span class="tm30">http://www.google.com/intl/en/analytics/privacyoverview.html</span></a></u><span
+ class="tm30">.&nbsp; </span></p>
+<p class="Normal tm39"><span class="tm30">For more information on Google&#8217;s privacy policy, visit&nbsp;</span><u><a href="http://www.google.com/intl/en/policies/privacy/"><span
+ class="tm30">http://www.google.com/intl/en/policies/privacy/</span></a></u><span class="tm30">.</span></p>
+<p class="Normal_Web_ tm40"><span class="tm41">We use this information to make our Site easier to find on the Internet and to improve our Site by learning which pages and features are interesting to our visitors. We treat
+this information as non-personal information and do not attempt to connect it to personally identifiable information, except as otherwise required by law.</span></p>
+<p class="Body"><strong><span class="tm31">&#160;</span></strong></p>
+<p class="Body"><strong><span class="tm31">Do we transfer your data to other countries?</span></strong></p>
+<p class="Body"><strong><span class="tm31">&#160;</span></strong></p>
+<p class="Body"><span class="tm30">No.</span></p>
+<p class="Body"><strong><span class="tm31">&#160;</span></strong></p>
+<p class="Body"><strong><span class="tm31"></span><span class="tm31">How Do We Respond to &quot;Do Not Track&quot; Signals?</span></strong></p>
+<p class="Body"><span class="tm41"></span><strong><span class="tm31"><br /></span></strong><span class="tm30">We may track your browsing behavior to better tailor suggestions and information for you.</span><span
+ class="tm41"> </span></p>
+<p class="Body"><span class="tm41">&#160;</span></p>
+<p class="Body"><span class="tm30"></span><span class="tm41">Some third-party sites also keep track of your browsing activities when they serve you content, which enables them to tailor what they present to you.&nbsp;</span></p>
+<p class="Body tm38"><span class="tm30">&#160;</span></p>
+<p class="Body tm38"><span class="tm30"></span><span class="tm30">You can opt out of certain tracking by adjusting the settings on your browser.  However, many websites (including the Site) may not respond to such signals.</span></p>
+<p class="Body tm38"><span class="tm30">&#160;</span></p>
+<p class="Body tm38"><span class="tm30">There are also browser extensions that may block tracking.  Again, they may not be effective in all cases.</span></p>
+<p class="Body tm38"><span class="tm30">&#160;</span></p>
+<p class="Textbody tm42"><strong><span class="tm31">How long do we store your information?</span></strong></p>
+<p class="Normal"><span class="tm30">We will retain your personal information only for as long as is necessary for the purposes set out in this Policy.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Textbody tm42"><span class="tm30">We intend to store some of your information indefinitely.</span></p>
+<p class="Textbody tm42"><strong><span class="tm31">&#160;</span></strong></p>
+<p class="Textbody tm42"><strong><span class="tm31">What about links to other websites?</span></strong></p>
+<p class="Textbody tm42"><span class="tm30">We may provide links to or compatibility with other websites. &nbsp;However, we&#8217;re not responsible for the privacy practices employed by those websites or the information or
+content they contain. &nbsp;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">&#160;</span></strong></p>
+<p class="BodyA tm26"><strong><span class="tm28">How do we protect your information?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">We use Site-appropriate physical, electronic, and other procedures to safeguard and secure the information we collect. However, please be aware that the Internet is an inherently unsafe
+environment, and that hackers are constantly working to defeat security measures. </span></p>
+<p class="BodyA tm26"><span class="tm27">Thus, we cannot guarantee that your information will not be accessed, disclosed, altered or destroyed, and you accept this risk.</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">&#160;</span></strong></p>
+<p class="BodyA tm26"><strong><span class="tm28">How can </span><em><span class="tm43">you</span></em><span class="tm28"> protect your information?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">We urge you to take steps to keep your personal information safe by not sharing it with others or posting it online. &nbsp;<br /></span></p>
+<p class="BodyA tm26"><span class="tm27"></span><strong><span class="tm28">Do we disclose any information to outside parties?</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information (PII) for commercial or marketing purposes. </span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">We may share your PII with third-party processors, which can include:</span></p>
+<p class="BodyA tm44"><span class="tm27"></span><span class="tm36">&#61623; </span><span class="tm27">Providers of email management and distribution tools</span></p>
+<p class="BodyA tm44"><span class="tm27"></span><span class="tm36">&#61623; </span><span class="tm27">Providers of security and fraud prevention services</span></p>
+<p class="BodyA tm44"><span class="tm27"></span><span class="tm36">&#61623; </span><span class="tm27">Providers of date aggregation and analytics software</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">We will, if required by a valid court order, provide your personal information in a civil or criminal proceeding. </span></p>
+<p class="Default"><span class="tm27">&#160;</span></p>
+<p class="Default"><span class="tm27">We will not share any PII that we have collected from or regarding you except as described below.</span></p>
+<p class="Default"><span class="tm27">&#160;</span></p>
+<p class="Default"><span class="tm27"></span><u><span class="tm27">Information Disclosed in Connection with Business Transactions</span></u><span
+ class="tm27">. If we are acquired by a third party as a result of a transaction such as a merger, acquisition or asset sale or if our assets are acquired by a third party in the event we go out of business or enter bankruptcy,
+some or all of our assets, including your PII, may be disclosed or transferred to a third party acquirer in connection with the transaction.</span></p>
+<p class="Default"><span class="tm27">&#160;</span></p>
+<p class="Default"><span class="tm27"></span><u><span class="tm27">Information Disclosed for Our Protection and the Protection of Others</span></u><span
+ class="tm27">. We cooperate with government and law enforcement officials or private parties to enforce and comply with the law. We may disclose any information about you to government or law enforcement officials or private
+parties as we, in our sole discretion, believe necessary or appropriate: (i) to respond to claims, legal process (including subpoenas); (ii) to protect our property, rights and safety and the property, rights and safety of
+a third party or the public in general; and (iii) to stop any activity that we consider illegal, unethical or legally actionable activity.</span></p>
+<p class="Default"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Sub-processors</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">The Company works with certain third-parties to provide specific functionality within the App.</span></p>
+<p class="BodyA tm26"><span class="tm27">By using the App, you also authorize the engagement of these third parties as sub-processors of your data.</span></p>
+<p class="BodyA tm26"><span class="tm27">If you object to the sub-processors&#8217; handling of your data on the terms indicated at the links, please terminate your use of the App.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<table border="0" rules="all" class="tm46 tm47 tm48">
+ <tbody class="tm49">
+ <tr>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">Entity Name</span></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">Subprocessing Activities</span></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">Entity Country</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="tm50 tm51 tm52">
+  <p class="Normal"><span class="tm30"></span><u><a href="https://mailchimp.com/legal/privacy/"><span class="tm30">The Rocket Science Group LLC</span></a></u></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="Normal"><span class="tm30">Email Sending</span></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">US</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td class="tm50 tm51 tm52">
+  <p class="Normal"><span class="tm30"></span><u><a href="https://help.github.com/en/articles/github-privacy-statement"><span
+   class="tm30">Github, Inc.</span></a></u></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">Web hosting</span></p>
+  </td>
+  <td class="tm50 tm51 tm52">
+  <p class="BodyA tm26"><span class="tm27">US</span></p>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><span class="tm27">You may contact these sub-processors directly to have any information they store about you erased.<br /><br />We may update our list of sub-processors by posting that information in
+this privacy policy. Please check back for updates.</span></p>
+<p class="Default"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Not Intended for Children</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">Our Site is not intended for children under the age of 13. We do not knowingly or specifically collect information from or about children under the age of 13. </span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="Normal"><strong><span class="tm31">Data Protection Rights</span></strong></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what personal data we hold about you and if you want it to
+be removed from our systems, please </span><span class="tm30">contact us at </span><span class="tm30">.</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="Normal"><span class="tm30">In certain circumstances, you have the following data protection rights:</span></p>
+<p class="Normal"><span class="tm30">&#160;</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to be informed of your rights</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to access, update or to delete the information we have on you</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right of rectification (to correct mistakes)</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to erasure (known as &#8220;the right to be forgotten&#8221;)</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to restrict processing of your data</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to data portability</span></p>
+<p class="ListParagraph tm34"><span class="tm30"></span><span class="tm37">&#61623; </span><span class="tm30">The right to withdraw consent</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Withdrawing Consent</span></strong></p>
+<p class="Normal"><span class="tm30">If you wish to withdraw your consent to process your personal data, please </span><span
+ class="tm30">contact us at </span><span class="tm30">blackwoodspecter@gmail.com</span><span class="tm30">.</span><span class="tm30"> If you withdraw your consent, this will not make processing which we undertook before you
+withdrew your consent unlawful.</span></p>
+<p class="BodyA tm26"><span class="tm27">&#160;</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">Changes to our Privacy Policy</span></strong></p>
+<p class="BodyA tm26"><span class="tm27">If we decide to change our Privacy Policy, we will post those changes on this page. We may also, but are not required to, send you an email notice.</span></p>
+<p class="BodyA tm26"><strong><span class="tm28">&#160;</span></strong></p>
+<p class="BodyA tm26"><strong><span class="tm28">Contact Us</span></strong></p>
+<p class="Normal"><span class="tm30"></span><span class="tm30">If you have questions about our Privacy Policy, please contact us at </span><span
+ class="tm30">blackwoodspecter@gmail.com</span><span class="tm30">.</span><span class="tm30"> </span></p>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<title></title>
+
+<meta name="author" content="Itzik Paz" />
+<style type="text/css">
+.Normal {
+line-height:125%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:9.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+h2 {
+line-height:108%;
+margin:1.0pt;
+margin-top:12.0pt;
+margin-bottom:14.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Liberation Serif";
+font-size:18.0pt;
+color:Black;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Title {
+line-height:90%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:32.0pt;
+color:#8EB610;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.BodyText {
+mso-style-name:"Body Text";
+line-height:125%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:9.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Header {
+line-height:125%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:9.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Footer {
+line-height:125%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:9.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Textbody {
+mso-style-name:"Text body";
+line-height:108%;
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:14.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Liberation Serif";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.BalloonText {
+mso-style-name:"Balloon Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Lucida Grande";
+font-size:9.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.TableContents {
+mso-style-name:"Table Contents";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:14.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Liberation Serif";
+font-size:12.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.TableHeading {
+mso-style-name:"Table Heading";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:14.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+text-align:center;
+font-family:"Liberation Serif";
+font-size:12.0pt;
+color:Black;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.annotationtext {
+mso-style-name:"annotation text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:10.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.annotationsubject {
+mso-style-name:"annotation subject";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:10.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:10.0pt;
+color:#4D4D4D;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.DocumentMap {
+mso-style-name:"Document Map";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:12.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Default {
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Helvetica Neue";
+font-size:11.0pt;
+color:Black;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.CommentText {
+mso-style-name:"Comment Text";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:10.0pt;
+color:#4D4D4D;
+font-weight:normal;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.CommentSubject {
+mso-style-name:"Comment Subject";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:10.0pt;
+color:#4D4D4D;
+font-weight:bold;
+border:none;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+}
+.Title_Char {
+color:#4D4D4D;font-size:16.0pt;font-family:"Calibri Light";font-weight:bold;}
+.Body_Text_Char {
+color:#4D4D4D;font-size:9.0pt;font-family:"Arial";}
+.Header_Char {
+color:#4D4D4D;font-size:9.0pt;font-family:"Arial";}
+.Footer_Char {
+color:#4D4D4D;font-size:9.0pt;font-family:"Arial";}
+.Internet_Link {
+color:#000080;}
+.Heading_2_Char {
+font-size:18.0pt;font-family:"Liberation Serif";font-weight:bold;}
+.Strong_Emphasis {
+font-weight:bold;}
+.Emphasis {
+font-style:italic;}
+.Balloon_Text_Char {
+color:#4D4D4D;font-size:9.0pt;font-family:"Lucida Grande";}
+.Hyperlink {
+color:#0563C1;}
+.Page_Number {
+}
+.annotation_reference {
+font-size:8.0pt;}
+.Comment_Text_Char {
+color:#4D4D4D;font-family:"Arial";}
+.Comment_Subject_Char {
+color:#4D4D4D;font-family:"Arial";font-weight:bold;}
+.apple_converted_space {
+}
+.Document_Map_Char {
+color:#4D4D4D;font-size:12.0pt;font-family:"Times New Roman";}
+.Strong {
+font-weight:bold;}
+.Unresolved_Mention {
+background:#E1DFDD;color:#605E5C;}
+.PageBreak {
+page-break-after:always;
+}
+.tm35 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+line-height:100%;
+}
+.tm36 {
+font-family:"Calibri";
+}
+.tm37 {
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm38 {
+line-height:100%;
+}
+.tm39 {
+color:Black;
+font-size:12.0pt;
+font-family:"Calibri";
+}
+.tm40 {
+margin-top:5.0pt;
+margin-bottom:5.0pt;
+line-height:100%;
+background:#FFFFFF;
+}
+.tm41 {
+font-style:italic;
+font-family:"Calibri";
+}
+.tm42 {
+margin-left:0.0pt;
+}
+.tm43 {
+font-size:12.0pt;
+font-family:"Calibri";
+}
+.tm44 {
+font-size:12.0pt;
+font-family:"Symbol";
+}
+.tm45 {
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+line-height:100%;
+}
+.tm46 {
+font-family:"Symbol";
+}
+.tm47 {
+font-size:12.0pt;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm48 {
+background:White;
+color:Black;
+font-size:12.0pt;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm49 {
+color:Black;
+font-size:12.0pt;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm50 {
+background:White;
+color:Black;
+font-size:12.0pt;
+font-family:"Calibri";
+}
+.tm51 {
+font-style:italic;
+font-family:"Calibri";
+font-weight:bold;
+}
+.tm52 {
+margin-bottom:1.0pt;
+line-height:100%;
+background:#FFFFFF;
+}
+
+</style>
+</head>
+<body>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">Terms of Use </span></strong></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">(Effective as of</span><span class="tm37"> </span><span
+ class="tm37">July 26th,</span><span class="tm37"> 2019)</span></strong></p>
+<p class="Normal tm38"><span class="tm39">Welcome to blackwoodspecter.com (the &#8220;Site&#8221;), a website operated by Blackwood Specter LLC </span><span
+ class="tm39">(the &#8220;Company&#8221;)</span><span class="tm39">.</span></p>
+<p class="Textbody tm40"><span class="tm36">The following Terms of Use (&#8220;Terms&#8221;) apply when you use the Site.</span></p>
+<p class="Textbody tm40"><span class="tm36">Please review these Terms carefully. &nbsp;By accessing or using the Site, you show you agree to these Terms. &nbsp;</span><em><span
+ class="tm41">If you don&#8217;t agree to these Terms, you may not access or use the Site.</span></em></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">ABOUT THE SITE</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">The Site allows you to input your email to sign up for our newsletter (the &#8220;Service&#8221;).</span></p>
+<p class="Textbody tm35"><span class="tm36">The Site also includes links to unaffiliated online storefronts where you can purchase games and other goods and services.</span></p>
+<p class="Textbody tm35"><span class="tm36">Also, please note that the Site is under constant development. New features may be added frequently, so it&#8217;s important to check back to this page for updates.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">USE OF THE SITE </span></strong></p>
+<p class="Textbody tm35"><span class="tm36">You need to be at least 13 years old to use the Site.  </span></p>
+<p class="Textbody tm35"><span class="tm36">You hereby affirm we have the right to terminate your account with or without prior notice.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">USE RESTRICTIONS</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">Your permission to use the Site is conditioned upon the following restrictions and conditions. </span></p>
+<p class="Textbody tm35"><span class="tm36">You agree that you will not:</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">use, display, mirror or frame the Site or any individual element within the Site, Company&#8217;s
+name, any Company trademark, logo or other proprietary information, or the layout and design of any page or form contained on a page or within the App, without Company&#8217;s express written consent;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">access, tamper with, or use non-public areas of the Site, Company&#8217;s computer systems, or
+the technical delivery systems of Company&#8217;s providers;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">attempt to probe, scan or test the vulnerability of any Company system or network or breach any
+security or authentication measures;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">avoid, bypass, remove, deactivate, impair, descramble or otherwise circumvent any technological
+measure implemented by Company or any of Company&#8217;s providers or any other third party (including another user) to protect the Site;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">use any meta tags or other hidden text or metadata utilizing a Company trademark, logo URL or
+product name without Company&#8217;s express written consent;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">use the Site, or any portion thereof, for any commercial purpose or for the benefit of any third
+party other than as permitted by these Terms;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">forge any TCP/IP packet header or any part of the header information in any email or newsgroup
+posting, or in any way use the Site to send altered, deceptive or false source-identifying information;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">collect or store any personally identifiable information from the Site or from other users of
+the Site without their express permission;</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">impersonate or misrepresent your affiliation with any person or entity;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36"></span><span class="tm36">sublicense, resell, rent, lease, transfer, assign, time share, or otherwise commercially exploit
+or make the Site available to any third party;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">use the Site for any unlawful purpose or for the promotion of illegal activities;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">use the Site to attempt to, or harass, abuse or harm another person or group;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">use another user&#8217;s account without permission;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">interfere or attempt to interfere with the proper functioning of the Site;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">make any automated use of the Site, or take any action that we deem to impose or to potentially impose an unreasonable
+or disproportionately large load on our servers or network infrastructure;</span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">attempt to decipher, reverse engineer, decompile, or disassemble any portion of the Site or the software used to provide
+the Service; </span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">bypass any robot exclusion headers or other measures we take to restrict access to the Site or use any software, technology,
+or device to scrape, spider, or crawl the Site or harvest or manipulate data; </span></p>
+<p class="Textbody tm45"><span class="tm36"></span><span class="tm46">&#183; </span><span class="tm36">publish or link to malicious content intended to damage or disrupt another user&#8217;s browser, computer, or mobile device;
+ or</span></p>
+<p class="Default tm42"><span class="tm43"></span><span class="tm44">&#183; </span><span class="tm43"></span><span class="tm43">encourage or enable any other individual to do any of the foregoing.</span><span
+ class="tm43"><br /></span></p>
+<p class="Default"><strong><span class="tm47">MONITORING AND COMPLIANCE</span></strong></p>
+<p class="Default"><span class="tm43">&#160;</span></p>
+<p class="Default"><span class="tm43">Although the Company is not obligated to monitor access to or use of the Site, we have the right to do so for the purpose of operating the Site, to ensure compliance with these Terms,
+and to comply with applicable law or other legal requirements. We reserve the right, but are not obligated, to remove or disable access to the Site, at any time and without notice. We have the right to investigate violations
+of these Terms or conduct that affects the Service. We may also consult and cooperate with law enforcement authorities to prosecute users who violate the law.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">INTELLECTUAL PROPERTY</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">You acknowledge and agree that the Company and its licensors retain ownership of all intellectual property rights of any kind related to the Site, including applicable copyrights,
+trademarks, and other proprietary rights. The Company reserves all rights that are not expressly granted to you under these Terms.</span></p>
+<p class="Normal tm38"><span class="tm39"></span><strong><span class="tm48">FEEDBACK</span></strong><span class="tm39"><br /><br />We welcome and encourage you to provide feedback, comments, and suggestions for improvements
+of the  Site (&#8220;</span><strong><span class="tm49">Feedback</span></strong><span class="tm39">&#8221;). You may submit Feedback by emailing us at </span><u><a
+ href="mailto:blackwoodspecter@gmail.com"><span class="tm43">blackwoodspecter@gmail.com</span></a></u><span class="tm39">. </span><span
+ class="tm50">You acknowledge and agree that if you submit any Feedback to us, you hereby grant to us a non-exclusive, worldwide, perpetual, irrevocable, fully-paid, royalty-free, sub-licensable (through several tiers) and
+transferable license under any and all intellectual property rights that you own or control in relation to the Feedback to use, reproduce, view, communicate to the public by any means, print, copy (whether onto hard disk or
+other media), edit, translate, perform and display (publicly or otherwise), distribute, redistribute, modify, adapt, make, sell, offer to sell, transmit, license, transfer, stream, broadcast, create derivative works from,
+and otherwise use and exploit the Feedback for any purpose.</span></p>
+<p class="Textbody tm35"><strong><span class="tm37">INDEMNIFICATION</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">You agree to indemnify, defend, and hold harmless the Company from any and all claims, liabilities, expenses, and damages, including reasonable attorneys&#39; fees and costs, made
+by any third party related to: (a) your use or attempted use of the Site in violation of these Terms; or (b) your violation of any law or rights of any third party.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">ONLINE CONTENT DISCLAIMER</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">The Company does not guarantee the accuracy, completeness, or usefulness of any information on the Site and neither does the Company adopt nor endorse, nor is the Company responsible
+for, the accuracy or reliability of any opinion, advice, or statement made by parties other than the Company, including on third-party websites accessed via links on the Site. &nbsp;Under no circumstances will the Company
+be responsible for any loss or damage resulting from anyone&#8217;s reliance on information or other content posted on the Site.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">USER CONSENT TO RECEIVE COMMUNICATIONS IN ELECTRONIC FORM</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">For contractual purposes, you (a) consent to receive emails via the email address you have submitted when you sign up on the Site; and (b) agree that all Terms, agreements, notices,
+disclosures, and other communications that the Company provides to you electronically satisfy any legal requirement that such communications would satisfy if it were in writing. &nbsp;The foregoing does not affect your non-waivable
+rights.</span></p>
+<p class="Normal tm38"><span class="tm39">The Company may also use your email address to send you other messages, including information about the Company and Site and special offers. You may opt out of such email by changing
+your account settings or sending an email to blackwoodspecter@gmail.com.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">WARRANTY DISCLAIMER</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">THE SITE AND SERVICE ARE PROVIDED &#8220;AS IS,&#8221; WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS,
+IMPLIED OR STATUTORY, REGARDING THE SITE AND SERVICE INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SECURITY, ACCURACY AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING,
+THE COMPANY MAKES NO WARRANTY OR REPRESENTATION THAT ACCESS TO OR OPERATION OF THE SITE WILL BE UNINTERRUPTED OR ERROR FREE. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR USE OF FILES, INFORMATION, CONTENT,
+LINKS,<a id="aGoBack"></a> OR OTHER MATERIAL SENT TO OR OBTAINED FROM THE SITE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF WARRANTY, SO THIS PROVISION MAY NOT APPLY TO YOU.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">LIMITATION OF DAMAGES; RELEASE</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, DIRECTORS, OR EMPLOYEES, OR ITS LICENSORS OR PARTNERS, BE LIABLE TO YOU FOR ANY LOSS OF
+PROFITS, USE, &nbsp;OR DATA, OR FOR ANY INCIDENTAL, INDIRECT, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, HOWEVER ARISING, THAT RESULT FROM (A) THE USE, DISCLOSURE, OR DISPLAY OF YOUR USER CONTENT; (B) YOUR USE OR INABILITY
+TO USE THE SITE; (C) THE SITE GENERALLY OR THE SOFTWARE OR SYSTEMS THAT MAKE THE SITE AND SERVICE AVAILABLE; OR (D) ANY OTHER INTERACTIONS WITH THE COMPANY OR ANY OTHER USER OF THE SITE, WHETHER BASED ON WARRANTY, CONTRACT,
+TORT (INCLUDING NEGLIGENCE), FRAUD, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE COMPANY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL
+PURPOSE. &nbsp;</span><strong><em><span class="tm51">IN NO EVENT WILL COMPANY&#8217;S LIABILITY TO YOU EXCEED $10</span></em><span
+ class="tm37">. </span></strong><span class="tm36">SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF LIABILITY, SO THIS PROVISION MAY NOT APPLY TO YOU.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">MODIFICATION OF TERMS OF USE</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">The Company can amend these Terms at any time. &nbsp;It&#8217;s your responsibility to check the Site from time to time to view any such changes. &nbsp;If you continue to use the
+Site, you show your agreement to our revisions to these Terms. &nbsp;&nbsp;Any changes to these Terms (other than as set forth in this paragraph) or waiver of the Company&#8217;s rights hereunder shall not be valid or effective
+except in a written agreement bearing the physical signature of an officer of the Company. &nbsp;No purported waiver or modification of these Terms by the Company via telephonic or email communications shall be valid.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">PRIVACY POLICY</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">The Company respects the privacy of its users. &nbsp;Please refer to our Privacy Policy (found <a href="http://blackwoodspecter.com/privacy.html"> here </a>), which explains how we collect, use, and disclose information that pertains to
+your privacy. &nbsp;When you access or use the Site, you show that you agree to this Privacy Policy.</span></p>
+<p class="Textbody tm35"><span class="tm36"></span><strong><span class="tm37">GENERAL TERMS</span></strong></p>
+<p class="Textbody tm35"><span class="tm36">If any part of these Terms is held invalid or unenforceable, that portion of the Terms will be construed consistent with applicable law. &nbsp;The remaining portions will remain
+in full force and effect. Any failure on the part of the Company to enforce any provision of these Terms will not be considered a waiver of our right to enforce such provision. &nbsp;Our rights under these Terms will survive
+any termination of these Terms.</span></p>
+<p class="Textbody tm35"><span class="tm36">You agree that any legal action related to or arising out of your relationship with the Company must commence within ONE year after the cause of action accrues. &nbsp;Otherwise,
+such cause of action is permanently barred.</span></p>
+<p class="Textbody tm35"><span class="tm36">These Terms and your use of the Site and Service are governed by the federal laws of the United States of America and the laws of the State of Ohio without regard to conflict of
+law provisions.</span></p>
+<p class="Normal tm40"><span class="tm39">You agree to resolve any claims relating to these Terms or the Site via the courts of Columbus, OH.</span></p>
+<p class="Normal tm52"><span class="tm39">NEITHER YOU NOR THE COMPANY MAY LITIGATE ANY CLAIMS AS A REPRESENTATIVE OR MEMBER OF A CLASS OR IN A PRIVATE ATTORNEY GENERAL CAPACITY.</span></p>
+<p class="Normal tm40"><span class="tm39">If you attempt to bring any legal action against the Company based in any way on the Site you agree that, in the event you do not prevail or the Company does prevail, you will reimburse
+the Company for any costs and attorneys&#8217; fees associated with its defense of the action.</span></p>
+<p class="Textbody tm35"><span class="tm36">The Company may assign or delegate these Terms and/or the Company&#8217;s Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You
+may not assign or delegate any rights or obligations under the Terms or Privacy Policy without the Company&#8217;s prior written consent, and any unauthorized assignment and delegation by you is void.</span></p>
+<p class="Textbody tm35"><strong><span class="tm37">YOUR AGREEMENT</span></strong></p>
+<p class="Textbody tm35"><strong><span class="tm37">YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THE TERMS, AND WILL BE BOUND BY THESE TERMS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS TOGETHER WITH THE PRIVACY
+POLICY REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER
+OF THIS AGREEMENT.</span></strong></p>
+</body>
+</html>
